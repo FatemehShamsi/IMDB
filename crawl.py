@@ -9,7 +9,7 @@ HEADERS = {
 BASE_URL = 'https://www.imdb.com/'
 
 
-class IMDB():
+class IMDB:
     def __init__(self, url):
         self.url = url
         response = requests.get(BASE_URL + self.url, headers=HEADERS)
